@@ -1,6 +1,8 @@
 <html lang="en">
     <head>
+        <meta charset="UTF-8">
         <title>A form for students' details and school fees</title>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <header>
@@ -8,64 +10,67 @@
             <h3 id="title2">School Fees Entry Form</h3>
         </header>
         <main>
-            <form action="/" id="">
+            <form action="/" id="school-fees-form" method="GET">
                 <section id="student-details">
-                    <div class="form-group">
-                        <label id="name" for="name">Name</label>
-                        <input type="text" id="name" name="name" placeholder="Enter student's full name" required>
-                    </div>
-                    <!--
-                    <div class="form-group">
-                        <label id="age" for="age">Age</label>
-                        <input type="number" id="number" name="age" min="" placeholder="Enter student's full name" required>
-                    </div>
-                    -->
-                    <div class="form-group">
-                        <label id="class" for="class">Class</label>
-                        <select id="dropdown" name="class">
-                            <option value="primary1">Primary 1</option>
-                            <option value="primary2">Primary 2</option>
-                            <option value="primary3">Primary 3</option>
-                            <option value="primary4">Primary 4</option>
-                            <option value="primary5">Primary 5</option>
-                            <option value="jss1">JSS 1</option>
-                            <option value="jss2">JSS 2</option>
-                            <option value="jss3">JSS 3</option>
-                            <option value="sss1">SSS 1</option>
-                            <option value="sss2">SSS 2</option>
-                            <option value="sss3">SSS 3</option>
-                        </select>
-                    </div>
+                    <fieldset>
+                        <legend>Student's Information</legend>
+                        <div class="form-group">
+                            <label id="name" for="name">Name</label>
+                            <input type="text" id="name" name="name" placeholder="Enter student's full name" required>
+                        </div>
+                        <div class="form-group">
+                            <label id="age" for="age">Age</label>
+                            <input type="number" id="number" name="age" min="" placeholder="Enter student's full name" required>
+                        </div>
+                        <div class="form-group">
+                            <label id="class" for="class">Class</label>
+                            <select id="dropdown" name="class">
+                                <option value="primary1">Primary 1</option>
+                                <option value="primary2">Primary 2</option>
+                                <option value="primary3">Primary 3</option>
+                                <option value="primary4">Primary 4</option>
+                                <option value="primary5">Primary 5</option>
+                                <option value="jss1">JSS 1</option>
+                                <option value="jss2">JSS 2</option>
+                                <option value="jss3">JSS 3</option>
+                                <option value="sss1">SSS 1</option>
+                                <option value="sss2">SSS 2</option>
+                                <option value="sss3">SSS 3</option>
+                            </select>
+                        </div>
+                    </fieldset>
                 </section>
                 <section id="school-fees">
-                    <legend>School Fees</legend>
-                    <div class="form-group">
-                        <label id="tuition" for="tuition">Tuition</label>
-                        <input type="number" name="tuition" placeholder="Enter tuition fee">
-                    </div>
-                    <div class="form-group">
-                        <label id="textbook" for="textbook">Textbooks</label>
-                        <input type="number" name="textbook" placeholder="Enter textbook fee">
-                    </div>
-                    <div class="form-group">
-                        <label id="uniform" for="uniform">Uniform</label>
-                        <input type="number" name="uniform" placeholder="Enter uniform fee">
-                    </div>
-                    <div class="form-group">
-                        <label id="lunch-meal" for="lunch-meal">Lunch Meal</label>
-                        <input type="number" name="lunch-meal" placeholder="Enter lunch meal fee">
-                    </div>
-                    <div class="form-group">
-                        <label id="transport" for="transport">Transport (School-Bus)</label>
-                        <input type="number" name="transport" placeholder="Enter transport fee">
-                    </div>
-                    <div class="form-group">
-                        <p>Payment Status</p>
-                        <label><input type="radio" value="paid" name="status">Paid</label>
-                        <label><input type="radio" value="unpaid" name="status">Unpaid</label>
-                    </div>   
+                    <fieldset>
+                        <legend>School Fees</legend>
+                        <div class="form-group">
+                               <label id="tuition" for="tuition">Tuition</label>
+                            <input type="number" name="tuition" placeholder="Enter tuition fee">
+                        </div>
+                        <div class="form-group">
+                            <label id="textbook" for="textbook">Textbooks</label>
+                            <input type="number" name="textbook" placeholder="Enter textbook fee">
+                        </div>
+                        <div class="form-group">
+                            <label id="uniform" for="uniform">Uniform</label>
+                            <input type="number" name="uniform" placeholder="Enter uniform fee">
+                        </div>
+                        <div class="form-group">
+                            <label id="lunch-meal" for="lunch-meal">Lunch Meal</label>
+                            <input type="number" name="lunch-meal" placeholder="Enter lunch meal fee">
+                        </div>
+                        <div class="form-group">
+                            <label id="transport" for="transport">Transport (School-Bus)</label>
+                            <input type="number" name="transport" placeholder="Enter transport fee">
+                        </div>
+                        <div class="form-group">
+                            <p>Payment Status</p>
+                            <label><input type="radio" value="paid" name="status">Paid</label>
+                            <label><input type="radio" value="unpaid" name="status">Unpaid</label>
+                        </div>   
+                    </fieldset>
                 </section>
-                <section id="send">
+                <section id="btn">
                     <button id="submit" type="submit">Submit</button>
                 </section>
             </form>
